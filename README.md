@@ -1,6 +1,8 @@
 # 📊 Brand Protection & IP Risk Analysis Dashboard
+![Python](https://img.shields.io/badge/Python-Data%20Cleaning-blue)
+![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)
 
-> An end-to-end Power BI solution designed to analyze platform activity, geographical risk, and intellectual property violations across global marketplaces.
+> An end-to-end data analysis solution focused on preprocessing, transforming, and analyzing marketplace data to uncover platform, geographical, and IP risk insights.
 
 ---
 
@@ -8,7 +10,7 @@
 
 This project presents an interactive Power BI dashboard developed to evaluate brand protection performance and identify patterns in IP violations and enforcement activity. The solution integrates platform data, geographical distribution, seller behavior, and infringement characteristics to generate actionable insights.
 
-The dataset was AI-generated and intentionally unstructured, simulating real-world inconsistencies. It was cleaned and transformed using Python before being used for reporting.
+The dataset was designed to simulate real-world conditions, containing intentional inconsistencies and irregularities. It was cleaned, standardized, and transformed using Python to ensure accuracy before being used for analysis and reporting.
 
 The dashboard enables stakeholders to:
 
@@ -17,6 +19,14 @@ The dashboard enables stakeholders to:
 - Analyze IP violation patterns  
 - Evaluate enforcement effectiveness  
 - Understand revenue exposure from infringements  
+
+---
+## ⚠️ Key Insights
+
+- China and India are the leading contributors to total listings volume  
+- Platform distribution is highly fragmented, indicating decentralized risk  
+- Design-related infringements drive the highest revenue exposure  
+- APAC dominates both listings volume and overall risk exposure
 
 ---
 
@@ -38,23 +48,24 @@ This project addresses that challenge by cleaning, structuring, and visualizing 
 
 ### 🔹 Data Cleaning (Python – VS Code / Jupyter)
 
-- Standardized price and currency formats  
-- Converted textual values (e.g., 1.2K, 10+, RFQ) into numeric  
-- Handled missing values  
-- Removed duplicate records (URLs)  
-- Cleaned categorical inconsistencies (IP Type, Infringement Type)  
-- Parsed and formatted date fields  
+- Standardized price and currency formats across multiple sources  
+- Converted unstructured textual values (e.g., 1.2K, 10+, RFQ) into numerical format for analysis  
+- Handled missing values and ensured data completeness  
+- Removed duplicate records to maintain data integrity  
+- Standardized categorical fields (IP Type, Infringement Type, Status) for consistency  
+- Parsed and formatted date fields for time-based analysis  
+- Ensured consistency across multiple fields to improve analytical accuracy
 
 ### 🔹 Data Adjustment (Excel)
 
-- Improved distribution realism (data was initially too uniform)  
-- Prepared dataset for better analytical output  
+- Refined data distribution to reduce uniformity and improve analytical realism  
+- Applied final validations and adjustments to ensure data readiness for reporting  
 
 ### 🔹 Data Modeling (Power BI)
 
-- Created DAX measures  
-- Designed KPIs for performance and risk  
-- Built multi-page dashboard  
+- Developed DAX measures for key metrics including listings, revenue exposure, and compliance  
+- Designed KPIs to evaluate performance, risk, and contribution across dimensions  
+- Built a structured multi-page dashboard for platform, geographical, and IP analysis
 
 ---
 
@@ -117,13 +128,14 @@ This project addresses that challenge by cleaning, structuring, and visualizing 
 
 ## 🧠 Data Modeling & Analytics
 
-Key measures created using DAX:
+### 📐 Key Measures (DAX)
 
 - Total Listings  
 - Compliance Rate (%)  
 - Revenue Exposure  
-- Top Contribution Metrics  
 - Avg Revenue per Listing  
+- Top 3 Contribution (Platform / Country)  
+- High Risk Entity (Country / Platform based on listings)
 
 ---
 
@@ -154,21 +166,11 @@ Key measures created using DAX:
 
 ---
 
-## 📈 Key Insights
-
-- Listings are highly fragmented across platforms  
-- No single platform dominates significantly  
-- Certain countries contribute more to overall risk  
-- Trademark violations drive higher revenue exposure  
-- Counterfeit is the most frequent infringement type  
-
----
-
 ## 💼 Business Impact
 
-- Improves visibility into platform and regional risks  
-- Enables faster identification of high-risk areas  
-- Supports data-driven enforcement decisions  
+- Improves visibility into platform-level and regional risk patterns  
+- Enables faster identification of high-risk countries and IP categories  
+- Supports data-driven prioritization of enforcement actions  
 
 ---
 
@@ -176,8 +178,7 @@ Key measures created using DAX:
 
 1. Download the `.pbix` file  
 2. Open in Power BI Desktop  
-3. Use filters to explore insights  
-
+3. Use slicers (Year, Platform, Country, IP Type) to explore insights 
 ---
 
 ## 👤 Author
