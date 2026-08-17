@@ -75,7 +75,20 @@ This project addresses that challenge by cleaning, structuring, and visualizing 
 
 ---
 
-### 2. Platform Analysis
+### 2. IP Analysis
+
+#### Key Metrics
+- Top IP Type Violated  
+- Most Common Infringement Type  
+- Revenue Impact by IP Type  
+
+#### Business Value
+- Identifies vulnerable IP categories  
+- Highlights infringement patterns  
+
+---
+
+### 3. Platform Analysis
 
 #### Key Metrics
 - Listings by Platform  
@@ -88,7 +101,7 @@ This project addresses that challenge by cleaning, structuring, and visualizing 
 
 ---
 
-### 3. Geographical Analysis
+### 4. Geographical Analysis
 
 #### Key Metrics
 - Listings by Country  
@@ -101,18 +114,6 @@ This project addresses that challenge by cleaning, structuring, and visualizing 
 
 ---
 
-### 4. IP Analysis
-
-#### Key Metrics
-- Top IP Type Violated  
-- Most Common Infringement Type  
-- Revenue Impact by IP Type  
-
-#### Business Value
-- Identifies vulnerable IP categories  
-- Highlights infringement patterns  
-
----
 
 ## 🧠 Data Modeling & Analytics
 
@@ -139,8 +140,17 @@ Key measures created using DAX:
 ---
 
 ## 📷 Dashboard Preview
+### Overview
+<img width="1272" height="713" alt="image" src="https://github.com/user-attachments/assets/329d980c-d777-4210-8f31-a4b4f72e2b0c" />
 
-_Add screenshots here_
+### IP Analysis
+<img width="1269" height="715" alt="image" src="https://github.com/user-attachments/assets/b022b066-b044-4bc2-9375-541ddc389408" />
+
+### Platform Analysis
+<img width="1267" height="715" alt="image" src="https://github.com/user-attachments/assets/575048e5-747e-4a63-bede-eb13a983d669" />
+
+### Geographical Analysis
+<img width="1271" height="713" alt="image" src="https://github.com/user-attachments/assets/05d9abdb-7805-4ec5-ac8e-941db3dd52ef" />
 
 ---
 
